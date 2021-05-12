@@ -14,24 +14,20 @@
     "plugin:prettier/recommended"
   ],
   "rules": {
+    "no-console": 0,
+    "prettier/prettier": 1,
+    "@typescript-eslint/no-explicit-any": 0,
     "@typescript-eslint/explicit-module-boundary-types": ["error", {
       "allowArgumentsExplicitlyTypedAsAny": true
     }],
-    "@typescript-eslint/no-explicit-any": 0,
-    "@typescript-eslint/no-unused-vars": 0,
-    "no-console": 0,
-    "no-unused-vars": 1,
-    "quotes": ["error", "single", {
+    "quotes": ["warn", "single", {
       "allowTemplateLiterals": true,
       "avoidEscape": true
     }],
-    "semi-style": ["error", "last"],
-    "max-len": ["error", {
-      "code": 80
-    }],
-    "no-irregular-whitespace": "error",
-    "no-trailing-spaces": "error",
-    "no-multi-spaces": "error",
-    "eqeqeq": ["error", "always"]
+    "semi-style": ["warn", "last"],
+    "no-irregular-whitespace": "warn",
+    "no-trailing-spaces": "warn",
+    "no-multi-spaces": "warn",
+    "eqeqeq": ["warn", "always"]
   }
 }
